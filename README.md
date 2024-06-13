@@ -1,4 +1,5 @@
 # README de la tercera entrega
+--------------------------------------
 Tercera entrega de coderhouse, objetivos cumplidos:
 ✅Usar un template de bootstrap
 ✅Reutilizar el template utilizando la herencia
