@@ -1,7 +1,7 @@
 # README de la tercera entrega
 --------------------------------------
 Tercera entrega de coderhouse, objetivos cumplidos:
-✅ Usar un template de bootstrap
+<pre>✅ Usar un template de bootstrap
 ✅ Reutilizar el template utilizando la herencia
 ✅ Utilizar los forms para guardar información en la base de datos
 ✅ Usar una barra de busqueda para encontrar información en la base de datos (extra)
@@ -12,4 +12,4 @@ Tercera entrega de coderhouse, objetivos cumplidos:
 /profesores ==> Formulario POST con tokens csrf y lista de profesores
 /cursos ======> Agregar nuevas camadas
 /estudiantes => Agregar nuevo estudiante
-/entregables => Formulario sin funcionalidad
+/entregables => Formulario sin funcionalidad 
