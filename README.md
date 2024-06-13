@@ -1,6 +1,6 @@
 # README de la tercera entrega
---------------------------------------
 Tercera entrega de coderhouse, objetivos cumplidos:
+--------------------------------------
 ✅ Usar un template de bootstrap
 ✅ Reutilizar el template utilizando la herencia
 ✅ Utilizar los forms para guardar información en la base de datos
