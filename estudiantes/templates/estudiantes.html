@@ -1,0 +1,12 @@
+{% extends "inicio\index.html" %}
+{% block indexH1 %}
+Estudiantes
+{% endblock indexH1 %}
+{% block form_completion %}
+  <h2>Formulario - Agregar Estudiante</h2>
+  <form action={% url "estudiantes" %} method="POST">
+    {% csrf_token %}
+    {{formulario}}
+    <button>Subir info</button>
+  </form>
+{% endblock form_completion %}

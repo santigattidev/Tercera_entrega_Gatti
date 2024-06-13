@@ -1,0 +1,12 @@
+{% extends "inicio\index.html" %}
+{% block indexH1 %}
+Cursos
+{% endblock indexH1 %}
+{% block form_completion %}
+  <form action={% url "cursos" %} method="post">
+    {% csrf_token %}
+    {{formulario}}
+    <button>Guardar camada</button>
+    {{se_guardo}}
+  </form>
+{% endblock form_completion %}

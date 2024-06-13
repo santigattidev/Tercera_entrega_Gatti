@@ -1,0 +1,15 @@
+{% extends "inicio\index.html" %}
+{% block indexH1 %}
+Lista de Profesores
+{% endblock indexH1 %}
+{% block form_completion %}
+  {% if profesores %}
+    <ul>
+      {% for profesor in profesores %}
+      <li>{{profesor}}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No hay profesores</p>
+  {% endif %}
+{% endblock form_completion %}

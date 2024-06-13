@@ -1,0 +1,25 @@
+{% extends "inicio\index.html" %}
+{% block indexH1 %}
+Profesores
+{% endblock indexH1 %}
+{% block form_completion %}
+  <h2>Formulario - Agregar Profesor</h2>
+  <a href={% url "listaDeProfesores" %}>Ver lista</a>
+  <form style="display: flex;gap: 10px;margin-left: 0.5rem; width: 21rem; flex-direction: column" action={% url "profesores" %} method="POST">
+    {% csrf_token %}
+    {% comment %} <div style="display: flex; justify-content: space-between">
+      <span>Ingresar nombre</span> <input name="nombre" type="text" placeholder="Nombre"> 
+    </div>
+    <div style="display: flex; justify-content: space-between">
+      <span>Ingresar apellido</span><input name="apellido" type="text" placeholder="Apellido"> 
+    </div>
+    <div style="display: flex; justify-content: space-between">
+      <span>Ingresar email</span><input type="text" name="email" placeholder="Email"> 
+    </div>
+    <div style="display: flex; justify-content: space-between">
+      <span>Ingresar profesión</span><input type="text" name="profesion" placeholder="Profesión"> 
+    </div> {% endcomment %}
+    {{formulario}}
+    <button style="display: flex; justify-content: center; width: 6rem; margin: 0.5rem auto">Buscar</button>
+  </form>
+{% endblock form_completion %}

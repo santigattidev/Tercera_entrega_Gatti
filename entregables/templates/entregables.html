@@ -1,0 +1,19 @@
+{% extends "inicio\index.html" %}
+{% block indexH1 %}
+Entregables
+{% endblock indexH1 %}
+{% block form_completion %}
+  <h2>Formulario - Agregar Profesor</h2>
+  <form style="display: flex;gap: 10px;margin-left: 0.5rem; width: 21rem; flex-direction: column" action={% url "profesores" %}>
+    <div style="display: flex; justify-content: space-between">
+      <span>Ingresar nombre:</span><input name="nombre" type="text" placeholder="Nombre">
+    </div>
+    <div style="display: flex; justify-content: space-between">
+      <span>Fecha de Entrega:</span><input name="fechaDeEntrega" type="text" placeholder="Apellido">
+    </div>
+    <div style="display: flex">
+      <span>Entregado:</span><input style="margin: auto;" type="checkbox" name="email" placeholder="Email">
+    </div>
+    <button style="display: flex; justify-content: center; width: 6rem; margin: 0.5rem auto">Enviar</button>
+  </form>
+{% endblock form_completion %}

@@ -1,0 +1,17 @@
+{% extends "inicio\index.html" %}
+{% block indexH1 %}
+Inicio
+{% endblock indexH1 %}
+{% block form_completion %}
+  <h3>Buscar camada</h3>
+  <form action={% url "inicio" %} method="GET">
+    {% csrf_token %}
+    {{buscador}}
+    <button>Buscar</button>
+    <ul>
+      {% for curso in cursos %}
+        <li>{{curso}}</li>
+      {% endfor %}
+    </ul>
+  </form>
+{% endblock form_completion %}
